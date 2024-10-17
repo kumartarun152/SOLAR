@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+   
+}
+
+body>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid grey;
+    
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background: darkgoldenrod;
+    box-shadow: 0px 0px 10px 6px rgba(250, 221, 2);
+    border: none;
+    animation: rotate 1s infinite  linear;
+}
+
+.orbit-mercury {
+    width: 200px;
+    height: 200px;
+    animation: rotate 3s infinite  linear;
+}
+
+.mercury {
+    width: 30px;
+    height: 30px;
+    background: darkgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.orbit-venus {
+    width: 300px;
+    height: 300px;
+    animation: rotate 6s infinite  linear;
+}
+
+.venus {
+    width: 40px;
+    height: 40px;
+    background: sandybrown;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    transform: translateX(-50%);
+   
+}
+
+.orbit-earth {
+    width: 450px;
+    height: 450px;
+    animation: rotate 12s infinite  linear;
+}
+
+.earth {
+    width: 50px;
+    height: 50px;
+    background: lightskyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.moon-orbit{
+    width:100px;
+    height:100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid grey;
+    animation: rotate 2s infinite  linear;
+}
+.moon{
+    width:16px;
+    height:16px;
+    background: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+   
+}
+.orbit-mars {
+    width: 570px;
+    height: 570px;
+    animation: rotate 16s infinite  linear;
+}
+
+.mars {
+    width: 55px;
+    height: 55px;
+    background: darkred;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.orbit-juipiter {
+    width: 700px;
+    height: 700px;
+    animation: rotate 24s infinite  linear;
+}
+
+.juipiter {
+    width: 80px;
+    height: 80px;
+    background-color: sandybrown;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%);
+}
+
+
+@keyframes rotate{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
